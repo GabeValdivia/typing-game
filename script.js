@@ -36,7 +36,7 @@ const words = [
 let randomWord;
 
 // Initialze score
-let score;
+let score = 0;
 
 //initialize time
 let time = 10;
@@ -54,6 +54,12 @@ function addWordToDOM() {
 	word.innerHTML = randomWord;
 }
 
+// Update score
+function updateScore() {
+	score++;
+	scoreEl.innerHTML = score;
+}
+
 addWordToDOM();
 
 // Event listeners
@@ -62,6 +68,7 @@ text.addEventListener('input', e => {
 	
 	if(insertedText === randomWord){
 		addWordToDOM();
+		updateScore();
 
 		//Clear
 		e.target.value = "";
