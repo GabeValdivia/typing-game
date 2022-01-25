@@ -31,3 +31,13 @@ const words = [
 	'drage',
 	'loving',
 ];
+
+// Initialize word
+let randomWord;
+
+// Initialze score
+let score;
+
+//initialize time
+let time = 10;
+
