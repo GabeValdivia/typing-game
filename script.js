@@ -41,3 +41,8 @@ let score;
 //initialize time
 let time = 10;
 
+function getRandomWord() {
+	return words[Math.floor(Math.random() * words.length)];
+}
+
+console.log(getRandomWord());
