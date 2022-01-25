@@ -41,6 +41,8 @@ let score;
 //initialize time
 let time = 10;
 
+
+// Generate random word form array
 function getRandomWord() {
 	return words[Math.floor(Math.random() * words.length)];
 }
