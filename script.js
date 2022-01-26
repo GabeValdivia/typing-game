@@ -44,6 +44,10 @@ let time = 10;
 //default difficulty to valude in local storage or medium
 let difficulty = localStorage.getItem('difficulty') != null ? localStorage.getItem('difficulty') : 'medium';
 
+// Set difficulty select option value
+difficutlySelect.value = 
+	localStorage.getItem('difficulty') != null ? localStorage.getItem('difficulty') : 'medium';
+
 // Focus on text on start
 text.focus();
 
