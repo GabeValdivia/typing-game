@@ -101,5 +101,8 @@ text.addEventListener('input', e => {
 
 		//Clear
 		e.target.value = "";
+
+		time += 5;
+		updateTime();
 	}
 });
