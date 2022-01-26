@@ -41,8 +41,8 @@ let score = 0;
 //initialize time
 let time = 10;
 
-//default difficulty
-let difficulty = 'medium';
+//default difficulty to valude in local storage or medium
+let difficulty = localStorage.getItem('difficulty') != null ? localStorage.getItem('difficulty') : 'medium';
 
 // Focus on text on start
 text.focus();
